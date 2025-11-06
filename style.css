@@ -1,0 +1,1302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+}
+
+:root {
+    --primaryColor: #ff5e14;
+    --secondaryColor: #151222;
+    --tertiaryColor: #687187;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 2.5rem;
+    --ffPrimary: "Barlow Condensed", sans-serif;
+    --ffSecondary: "Nunito Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: var(--ffPrimary);
+    color: var(--darkColor);
+    font-size: var(--regularFont);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* :::::SCROLL BAR CODE S T A R T S::::: */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 1.5rem;
+    /* Vertical scrollbar */
+    height: 10px;
+    /* Horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #e3e4e6;
+    border-radius: 5px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #cececf;
+    /* border-radius: 5px; */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b9b9ba;
+}
+
+/* :::::SCROLL BAR CODE E N D S::::: */
+button {
+    background-color: var(--primaryColor);
+    font-family: var(--ffSecondary);
+    color: var(--lightColor);
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.8;
+    cursor: pointer;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 1rem 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    transition: background-color 0.2s ease;
+}
+
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    /* background-color: #13c6bd; */
+    width: 100%;
+    /* Full Screensize */
+    height: auto;
+    /* content Height */
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* background-color: #89f357; */
+    width: 100%;
+    height: auto;
+}
+
+.navBar {
+    padding: 1rem 2rem;
+}
+
+.navBarContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navBarBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navBarBlockone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarBoxone {
+    width: 100%;
+    height: auto;
+}
+
+.navBarBoxone figure img {
+    height: auto;
+    width: 7rem;
+}
+
+.navBarBlocktwo {
+    display: flex;
+    justify-content: center;
+}
+
+.navBarBoxtwo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navBarBoxtwo ul {
+    display: flex;
+}
+
+.navBarBoxtwo ul li a {
+    margin-right: 2.5rem;
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.navBarBlockthree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarBoxthree {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navBarBoxthree ul {
+    display: flex;
+}
+
+.navBarBoxthree ul li a {
+    margin-right: 2rem;
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.heroSection {
+    background:linear-gradient(90deg,rgb(34, 29, 29),transparent 50%), url(./assets/images/hero.jpg);
+    padding: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroSectionBlock {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.heroSectionBox {
+    width: 38%;
+    height: auto;
+}
+
+.heroSectionBox h1 {
+    font-family: var(--ffPrimary);
+    font-size: 5.3rem;
+    font-weight: 800;
+    color:var(--lightColor);
+}
+
+.heroSectionBox p {
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    color:var(--lightColor);
+    margin: 1rem 0rem;
+    margin-left: 1.4rem;
+}
+
+.heroSectionBox button {
+    margin-left: 1.8rem;
+}
+
+.aboutUs {
+    padding: 1rem 3rem;
+}
+
+.aboutUsContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.aboutUsBody {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.aboutUsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsBox {
+    width: 100%;
+    height: auto;
+}
+
+.aboutUsBox h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.aboutUsBox p {
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--darkColor);
+    margin: 1rem 0rem;
+}
+
+.services {
+    padding: 3rem;
+    background-color: #f7f9fa;
+}
+
+.servicesContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.servicesBodyone {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.servicesBlockone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.servicesBoxone h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.servicesBodytwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem 0rem;
+}
+
+.servicesBlocktwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesBoxtwo {
+    width: 100%;
+    height: auto;
+}
+
+.servicesBoxtwo h3 {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.servicesBoxtwo p {
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--darkColor);
+    margin: 1rem 0rem;
+}
+
+.servicesBoxtwo ul {
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--darkColor);
+}
+
+.servicesBoxtwo ul li i {
+    color: var(--primaryColor);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicesBlockthree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesBoxthree {
+    width: 100%;
+    height: auto;
+}
+
+.servicesBoxthree h3 {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.servicesBoxthree ul {
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--darkColor);
+    margin-top: 1rem;
+}
+
+.servicesBoxthree ul li i {
+    color: var(--primaryColor);
+    margin-right: 1rem;
+}
+
+.packages {
+    padding: 2rem 3rem;
+    /* background-color: #f7f9fa; */
+}
+
+.packagesContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.packagesBodyone {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.pakagesBlockone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.packagesBoxone h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.packagesBodytwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem 0rem;
+    padding: 3rem 0rem;
+}
+
+.packagesBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.packagesBox {
+    width: 100%;
+    height: auto;
+}
+
+.packagesCardHeader {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.packagesCardHeader figure img {
+    width: 100%;
+    height: 23rem;
+    border-radius: 10px;
+}
+
+.packagesCardMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.packagesCardMain h3 {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--darkColor);
+    margin-top: 1rem;
+}
+
+.packagesCardMain p {
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    color: var(--tertiaryColor);
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.rating p {
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    color: var(--darkColor);
+    font-weight: 400;
+    margin-right: 2rem;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+
+.price p {
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    color: var(--darkColor);
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    color: var(--darkColor);
+    font-weight: 400;
+}
+
+.price button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+}
+
+.contact {
+    padding: 2rem 3rem;
+}
+
+.contactContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contactBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactBlockone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.contactBoxone figure img {
+    width: auto;
+    height:50rem;
+}
+.contactBoxtwo{
+    margin-left: 2.5rem;
+}
+.contactBoxtwo h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.contactBoxtwo h3 {
+    font-family: var(--ffPrimary);
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--darkColor);
+}
+
+.contactFormContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.contactFormContainer input,
+.contactFormContainer select {
+    width: 90%;
+    padding: 1.2rem 1.5rem;
+    border: 2px solid #eaf2f5;
+    border-radius: 2px;
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    outline: none;
+    color: var(--tertiaryColor);
+    margin-right: 1.5rem;
+}
+
+.contactFormContainer button {
+    width: 90%;
+    border-radius: 0rem;
+}
+
+.reviews {
+    padding: 2rem 3rem 0rem;
+}
+
+.reviewsContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.reviewsBodyone {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.reviewsBlockone {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.reviewsBoxone {
+    width: 100%;
+    height: auto;
+}
+
+.reviewsBoxone h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.reviewsBodytwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 1rem 3rem;
+}
+
+.reviewsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c0ebfa;
+    background-color: #eaf2f5;
+}
+
+.reviewsBox {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+}
+
+.reviewsBox p {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.reviewsBox h4 {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+.reviewsBodythree{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 0rem 0rem;
+    border-top: 1px solid black;
+}
+.reviewsBlockthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewsBoxthree{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewsBoxthree p{
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--darkColor);
+}
+.reviewsBoxthree p span{
+    color: var(--primaryColor);
+}
+
+
+
+
+/* :::::: Packages :::::: */
+.heroSectionone {
+    background:linear-gradient(90deg,rgb(34, 29, 29),transparent 50%), url(./assets/images/hero.jpg);
+    padding: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroSectiononeBlock {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.heroSectiononeBox {
+    width: 38%;
+    height: auto;
+}
+
+.heroSectiononeBox h1 {
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--lightColor);
+}
+
+.heroSectiononeBox p {
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--lightColor);
+    margin: 1rem 0rem;
+
+}
+.copyright {
+    padding: 2rem 3rem 0rem;
+}
+
+.copyrightContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.copyrightBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 0rem 0rem;
+    border-top: 1px solid black;
+}
+.copyrightBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyrightBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyrightBox p{
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--darkColor);
+}
+.copyrightBox p span{
+    color: var(--primaryColor);
+}
+
+
+
+/* :::::: About Us :::::: */
+.story {
+    padding:  3rem;
+}
+.storyContainer{
+    max-width: 1200px;
+    margin: auto;
+}
+.storyBodyone{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.storyBlockone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.storyBoxone{
+    width: 100%;
+    height: auto;
+}
+.storyBoxone h2{
+    font-family: var(--ffPrimary);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+.storyBoxone p{
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    color: var(--darkColor);
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+.storyBodytwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 0rem;
+}
+.storyBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.storyBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.storyBox h3{
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+.storyBox p{
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    color: var(--darkColor);
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+.whyUs{
+    padding:  3rem;
+    background-color: #eaf2f5;
+}
+.whyUsContainer{
+    max-width: 1200px;
+    margin: auto;
+}
+.whyUsBody{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.whyUsBlock{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.whyUsBox{
+    width: 100%;
+    height: auto;
+}
+.whyUsBox h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+.whyUsBox ul{
+    margin-top: 2rem;
+}
+.whyUsBox ul li{
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    color: var(--darkColor);
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+.whyUsBox ul li i{
+    color: var(--primaryColor);
+    margin-right: 1rem;
+}
+
+/* :::::: Contact ::::::  */
+.contactone {
+    padding:  3rem;
+}
+
+.contactoneContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contactoneBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactoneBlockone {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+}
+.contactoneBoxone h2{
+    font-family: var(--ffPrimary);
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+.contactoneBoxone p{
+    font-family: var(--ffSecondary);
+    font-size: 1.7rem;
+    color: var(--darkColor);
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+.contactoneBoxone p i{
+    color: var(--primaryColor);
+    margin-right: 1rem;
+}
+.contactoneBoxone figure img{
+    width: auto;
+    height: 30rem;
+    margin-top: 2rem;
+}
+.contactoneBlocktwo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contactoneBoxtwo{
+    width: 100%;
+    height: auto;
+}
+
+
+.contactoneBoxtwo h2 {
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--primaryColor);
+}
+
+.contactoneBoxtwo h3 {
+    font-family: var(--ffPrimary);
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--darkColor);
+}
+
+.contactoneFormContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.contactoneFormContainer input,
+.contactoneFormContainer select {
+    width: 90%;
+    padding: 1.2rem 1.5rem;
+    border: 2px solid #eaf2f5;
+    border-radius: 2px;
+    font-family: var(--ffSecondary);
+    font-size: 1.5rem;
+    outline: none;
+    color: var(--tertiaryColor);
+    margin-right: 1.5rem;
+}
+
+.contactoneFormContainer button {
+    width: 90%;
+    border-radius: 0rem;
+}
+
+
+
+
+
+
+/* ::whatsapp::*/
+.whatsapp-float {
+    position: fixed;
+    width: 5.5rem;
+    height: 5.5rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    background-color: #25d366;
+    color: var(--lightColor);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float i {
+    margin-top: 1.2rem;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+.navBarBoxtwo #iconToggle {
+    cursor: pointer;
+    display: none;
+}
+
+.navBarBoxtwo .hamburgerIcon {
+    color: var(--lightColor);
+    font-size: 2rem;
+    background-color: var(--primaryColor);
+    padding: 0.25rem 1rem 0.1rem;
+    display: none;
+}
+
+
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        padding: 0rem 1rem;
+    }
+
+    .navBar {
+        padding: 2rem;
+    }
+
+    .navBarBoxtwo .hamburgerIcon {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        cursor: pointer;
+    }
+
+    #iconToggle:checked~.navLinks {
+        display: flex;
+    }
+
+    .navBarBlocktwo ul {
+        display: none;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        /* position: absolute; */
+        top: 8rem;
+        right: 2rem;
+    }
+
+    .navLinks li {
+        margin: 1rem 0rem;
+    }
+
+    .navBarBoxtwo {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navBarBoxthree {
+        display: none;
+    }
+
+    .heroSection {
+        padding: 8rem 3rem;
+    }
+
+    .heroSectionone {
+        padding: 5rem 3rem;
+    }
+
+    .packagesBodytwo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .packagesBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contactBoxone figure img {
+        display: none;
+    }
+
+    .contactBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reviewsBodytwo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .reviewsBoxthree{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .reviewsBoxthree p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .copyrightBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyrightBox p{
+        font-size: 1.5rem;
+    }
+    .contactBoxtwo{
+        margin-left: 0rem;
+    }
+    .contactFormContainer input,
+    .contactFormContainer select,
+    .contactFormContainer button {
+        width: 100%;
+    }
+
+    .storyBodytwo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .storyBox{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    .contactoneBody{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contactoneBlocktwo{
+        padding: 2rem 0rem;
+    }
+    .contactoneFormContainer input,
+    .contactoneFormContainer select,
+    .contactoneFormContainer button {
+        width: 100%;
+    }
+    
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (width >=577px) and (width <=768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* write code here */
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (width >=769px) and (width <=992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* write code here */
+    .navBar {
+        padding: 2rem;
+    }
+
+    .navBarBoxtwo .hamburgerIcon {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        cursor: pointer;
+    }
+
+    #iconToggle:checked~.navLinks {
+        display: flex;
+    }
+
+    .navBarBlocktwo ul {
+        display: none;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        /* position: absolute; */
+        top: 8rem;
+        right: 2rem;
+    }
+
+    .navLinks li {
+        margin: 1rem 0rem;
+    }
+
+    .navBarBoxtwo {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navBarBoxthree {
+        display: none;
+    }
+
+    .heroSection {
+        padding: 8rem 3rem;
+    }
+
+    .heroSectionone {
+        padding: 5rem 3rem;
+    }
+
+    .packagesBodytwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .packagesBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contactBoxone figure img {
+        display: none;
+    }
+
+    .contactBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reviewsBodytwo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contactBoxtwo{
+        margin-left: 0;
+    }
+    .contactFormContainer input,
+    .contactFormContainer select,
+    .contactFormContainer button {
+        width: 100%;
+    }
+    .storyBodytwo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .storyBox{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    .contactoneBody{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contactoneBlocktwo{
+        padding: 2rem 0rem;
+    }
+    .contactoneFormContainer input,
+    .contactoneFormContainer select,
+    .contactoneFormContainer button {
+        width: 100%;
+    }
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (width >=993px) and (width <=1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* write code here */
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (width >=1200px) */
+@media (min-width: 1201px) {
+    /* write code here */
+}

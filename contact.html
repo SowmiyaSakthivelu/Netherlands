@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tittle-->
+    <title>Netherlands Explore Travels</title>
+    <!--Favorite Icon-->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!--css Link-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awsome CND Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="navBarContainer">
+                <div class="navBarBody">
+                    <div class="navBarBlockone">
+                        <div class="navBarBoxone">
+                            <a href="./index.html">
+                                <figure>
+                                    <img src="./assets/images/logo.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navBarBlocktwo">
+                        <div class="navBarBoxtwo">
+                            <label for="iconToggle" class="hamburgerIcon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                            <input type="checkbox" id="iconToggle">
+                            <ul class="navLinks">
+                                <li><a href="./index.html">HOME</a></li>
+                                <li><a href="./aboutUs.html">ABOUT US</a></li>
+                                <li><a href="./packages.html">PACKAGES</a></li>
+                                <li><a href="#">TOURS</a></li>
+                                <li><a href="./contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navBarBlockthree">
+                        <div class="navBarBoxthree">
+                            <ul class="socialone">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="heroSectionone">
+            <div class="heroSectiononeContainer">
+                <div class="heroSectiononeBody">
+                    <div class="heroSectiononeBlock">
+                        <div class="heroSectiononeBox">
+                            <h1>“We are Here to Help You Plan Your Next Journey”</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contactone">
+            <div class="contactoneContainer">
+                <div class="contactoneBody">
+                    <div class="contactoneBlockone">
+                        <div class="contactoneBoxone">
+                            <h2>Contact Details</h2>
+                            <p><i class="fa-solid fa-location-dot"></i> Office Address: Amsterdam, Netherlands</p>
+                            <p><i class="fa-solid fa-phone"></i>Phone: +31 866 748 7254</p>
+                            <p><i class="fa-solid fa-envelope"></i>Email:
+                                [info@netherlandsexploretravels.com](mailto:info@netherlandsexploretravels.com)
+                            </p>
+                            <p><i class="fa-solid fa-clock"></i>Working Hours: Mon to Sat, 9:00 AM to 6:00 PM</p>
+                            <figure>
+                                <img src="./assets/images/contact.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="contactoneBlocktwo">
+                        <div class="contactoneBoxtwo">
+                            <h2>CONTACT US</h2>
+                            <h3>Book Your Dream Vacay Today!</h3>
+                            <div class="contactoneFormContainer">
+                                <form action="submit" method="post">
+                                    <div class="formGroup">
+                                        <label for="name"></label>
+                                        <input type="text" id="name" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="formGroup">
+                                        <label for="city"></label>
+                                        <input type="text" id="city" name="city" placeholder="City">
+                                    </div>
+                                    <div class="formGroup">
+                                        <label for="email"></label>
+                                        <input type="email" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="formGroup">
+                                        <label for="number"></label>
+                                        <input type="number" id="number" name="number" placeholder="Phone number">
+                                    </div>
+                                    <div class="formGroup">
+                                        <label for="peoples"></label>
+                                        <input type="number" id="people" name="people" placeholder="No. Of Peoples">
+                                    </div>
+                                    <div class="formGroup">
+                                        <select name="Vacation type" id="type" name="type">
+                                            <option value="">Vacation Type</option>
+                                            <option value="Friends Trip">Friends Trip</option>
+                                            <option value="Family Trip">Family Trip</option>
+                                            <option value="Corporate Trip">Corporate Trip</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit">SUBMIT</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            <div class="copyrightContainer">
+                <div class="copyrightBody">
+                    <div class="copyrightBlock">
+                        <div class="copyrightBox">
+                            <p>© 2025 <span>Netherlands Explore Travels</span>| All Rights Reserved.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--what app icon-->
+    <a href="https:wa.me/318667487254" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</body>
+
+</html>
