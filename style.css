@@ -13,8 +13,8 @@
     --lightColor: #ffffff;
     --regularFont: 1.6rem;
     --headingFont: 2.5rem;
-    --ffPrimary: "Barlow Condensed", sans-serif;
-    --ffSecondary: "Nunito Sans", sans-serif;
+    --ffPrimary: "Playfair", serif;
+    --ffSecondary:"Lato", sans-serif;
 }
 
 html {
@@ -178,7 +178,7 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -187,9 +187,9 @@ footer {
 }
 
 .navBarBoxtwo ul li a {
-    margin-right: 2.5rem;
+    margin-right: 1.4rem;
     font-family: var(--ffPrimary);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--darkColor);
 }
@@ -242,7 +242,7 @@ footer {
 .heroSectionBox h1 {
     font-family: var(--ffPrimary);
     font-size: 5.3rem;
-    font-weight: 800;
+    font-weight: 900;
     color:var(--lightColor);
 }
 
@@ -287,8 +287,8 @@ footer {
 .aboutUsBox h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--primaryColor);
 }
 
@@ -325,8 +325,8 @@ footer {
 .servicesBoxone h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--primaryColor);
 }
 
@@ -431,14 +431,14 @@ footer {
 .packagesBoxone h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--primaryColor);
 }
 
 .packagesBodytwo {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     gap: 3rem 0rem;
     padding: 3rem 0rem;
 }
@@ -458,6 +458,7 @@ footer {
     display: flex;
     justify-content: start;
     align-items: start;
+    
 }
 
 .packagesCardHeader figure img {
@@ -476,7 +477,7 @@ footer {
 .packagesCardMain h3 {
     font-family: var(--ffPrimary);
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--darkColor);
     margin-top: 1rem;
 }
@@ -567,16 +568,16 @@ footer {
 .contactBoxtwo h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--primaryColor);
 }
 
 .contactBoxtwo h3 {
     font-family: var(--ffPrimary);
     font-size: 2.2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--darkColor);
 }
 
@@ -634,8 +635,8 @@ footer {
 .reviewsBoxone h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
     color: var(--primaryColor);
 }
 
@@ -670,7 +671,7 @@ footer {
 .reviewsBox h4 {
     font-family: var(--ffPrimary);
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--primaryColor);
 }
 .reviewsBodythree{
@@ -727,7 +728,7 @@ footer {
 .heroSectiononeBox h1 {
     font-family: var(--ffPrimary);
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--lightColor);
 }
 
@@ -802,7 +803,7 @@ footer {
 .storyBoxone h2{
     font-family: var(--ffPrimary);
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--primaryColor);
 }
@@ -833,7 +834,7 @@ footer {
 .storyBox h3{
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--primaryColor);
 }
@@ -868,7 +869,7 @@ footer {
 .whyUsBox h2 {
     font-family: var(--ffPrimary);
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--primaryColor);
 }
@@ -911,7 +912,7 @@ footer {
 .contactoneBoxone h2{
     font-family: var(--ffPrimary);
     font-size: 2.3rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--primaryColor);
 }
@@ -945,7 +946,7 @@ footer {
 .contactoneBoxtwo h2 {
     font-family: var(--ffPrimary);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--primaryColor);
 }
@@ -953,7 +954,7 @@ footer {
 .contactoneBoxtwo h3 {
     font-family: var(--ffPrimary);
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--darkColor);
 }
